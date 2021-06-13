@@ -176,6 +176,7 @@
     <Content Include="js\bootstrap.esm.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="OrderDetails.aspx" />
     <Content Include="ProductRead.aspx" />
     <Content Include="Read.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -276,6 +277,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductRead.aspx.cs">
       <DependentUpon>ProductRead.aspx</DependentUpon>

@@ -52,17 +52,18 @@ namespace Crud_App
                     Label lblProductName = (Label)item.FindControl("lblProductName");
                     string Name = lblProductName.Text;
 
-                    Label lblPrice = (Label)item.FindControl("LblPrice");
+                    Label lblPrice = (Label)item.FindControl("lblPrice");
                     string Price = lblPrice.Text;
 
                     TextBox lblQuantity = (TextBox)item.FindControl("txtQty");
                     string quantity = lblQuantity.Text;
 
 
-                        SqlCommand cmd = new SqlCommand("Insert into tblCart VALUES(ProductID = '"+ ID + "', ProductName = '"+ Name + "', Quantity = '"+ quantity + "',Price='"+ Price + "')", con);
+                        SqlCommand cmd = new SqlCommand("Insert into tblCart(ProductID,ProductName,Quantity,Price) VALUES('"+ @ID + "',  '"+ @Name + "',  '"+ @quantity + "','"+ @Price + "')", con);
                         cmd.ExecuteNonQuery();
-                        Response.Write("<script> alert('New  has been added');  </script>");
-                    con.Close();
+                        Response.Write("<script> alert('New item has been added');  </script>");
+                      con.Close();
+                    
 
 
                     //function.cmd("INSERT INTO tbl_Order(userid, productid, name, surname, email, identificationnumber, phone, productimage, productname, piece, cargo, totalprice, paymenttype, orderdate) VALUES('" + Session["userid"] + "', '" + lblproductid.Text + "', '" + Session["name"] + "', '" + Session["surname"] + "', '" + Session["email"] + "', '" + Session["identificationnumber"] + "', '" + Session["phone"] + "', '" + imgproductimage.ImageUrl + "', '" + lblproductname.Text + "', '" + lblpiece.Text + "', '" + Session["cargo"] + "', '" + LblTotalPrice.Text + "', '" + DrpDwnPaymentType.Text + "', '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')");

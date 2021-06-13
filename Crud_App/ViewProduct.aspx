@@ -40,7 +40,7 @@
                     </td>
 
                     <td>
-                     <asp:LinkButton ID="lbcart" runat="server" CssClass="btn btn-success" href="#" OnClick="lbcart_Click">Add to cart</asp:LinkButton>
+                     <asp:LinkButton ID="lbcart" runat="server" CssClass="btn btn-success"  OnClick="lbcart_Click">Add to cart</asp:LinkButton>
                     </td>
 
                  

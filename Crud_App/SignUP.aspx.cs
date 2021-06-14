@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Crud_App
 {
-    public partial class Site : System.Web.UI.MasterPage
+    public partial class SignUP : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

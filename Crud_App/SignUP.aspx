@@ -1,6 +1,7 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Crud_App.Site.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUP.aspx.cs" Inherits="Crud_App.SignUP" %>
 
 <!DOCTYPE html>
+
 
 <html lang="en">
 <head runat="server">
@@ -33,35 +34,17 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
+  
 <body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-   </Scripts>
-        </asp:ScriptManager>
-
-         <div class="container">
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
   
   <ul class="nav nav-pills">
-    <li class="nav-item" id="Home">
-      <a class="nav-link active" href="#">Home</a>
+    <li class="nav-item navbar-right">
+      <a class="nav-link " href="#">Home</a>
     </li>
-    <li class="nav-item dropdown" id="Customer">
+    <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="#">Customers</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="Create.aspx">Create</a>
@@ -69,7 +52,7 @@
       
         <a class="dropdown-item" href="Delete.aspx">Delete</a></div>
     </li>
-       <li class="nav-item dropdown" id="Order">
+       <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="CreateProducts.aspx">Create</a>
@@ -84,21 +67,12 @@
        <li class="nav-item">
       <a  href="OrderDetails.aspx">Order Details</a>
     </li>
-    
+     <li class ="active"><a href ="SignUp.aspx">SignUp</a> </li>
+                        <li ><a href ="SignIn.aspx">SignIn</a> </li>
     
   </ul>
 </div>
-
-                    
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
         </div>
-
     </form>
 </body>
 </html>

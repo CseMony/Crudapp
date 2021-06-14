@@ -34,6 +34,7 @@ namespace Crud_App
                     lblMsg.Text = "New Product added Successfully ";
                     lblMsg.ForeColor = System.Drawing.Color.Green;
 
+                    Response.Redirect("ProductRead.aspx");
                 }
 
             }

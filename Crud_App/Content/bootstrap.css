@@ -4162,18 +4162,30 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li {
   float: left;
+    top: 0px;
+    left: 1px;
+    height: 36px;
+    width: 93px;
 }
 .nav-pills > li > a {
   border-radius: 4px;
+    top: -2px;
+    height: 18px;
+    width: 63px;
+    left: 6px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
+    top: 3px;
+    left: -1px;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
   background-color: #337ab7;
+    top: -4px;
+    left: 642px;
 }
 .nav-stacked > li {
   float: none;

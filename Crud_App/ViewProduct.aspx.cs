@@ -63,6 +63,7 @@ namespace Crud_App
                         cmd.ExecuteNonQuery();
                         Response.Write("<script> alert('New item has been added');  </script>");
                       con.Close();
+                    Response.Redirect("OrderDetails.aspx");
                     
 
 

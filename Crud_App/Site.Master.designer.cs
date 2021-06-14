@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Crud_App
+namespace Crud_App.Site
 {
 
 
-    public partial class SiteMaster
+    public partial class Master
     {
 
         /// <summary>
